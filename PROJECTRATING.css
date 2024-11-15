@@ -1,0 +1,63 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Rating container styling */
+.rating-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Styling for the stars */
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Hide the radio buttons */
+.stars input[type="radio"] {
+    display: none;
+}
+
+/* Styling for the labels (the stars) */
+.stars label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Change color when hovering over stars */
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #ffcc00;
+}
+
+/* Change color based on the radio button selection */
+.stars input[type="radio"]:checked ~ label {
+    color: #ffcc00;
+}
+
+/* Optional: styling for the h2 title */
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
